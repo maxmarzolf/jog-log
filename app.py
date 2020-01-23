@@ -18,10 +18,10 @@ def miles_ran():
 
 def insert_into_table(miles):
     current_date = datetime.now()
-    conn = sqlite3.connect('data')
-    c = conn.cursor()
-    c.execute('insert into run values (current_date, \"%s\")' % miles)
-    conn.commit()
+    connection = sqlite3.connect('data')
+    cursor = connection.cursor()
+    cursor.execute('insert into run values (current_date, \"%s\")' % miles)
+    connection.commit()
 
 
 if __name__ == '__main__':
