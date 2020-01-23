@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST">
+    <div class="stuff">
+        <input type="text" name="mile_input">
+        <button type="submit">Save Miles</button>
+    </div>
+
+    {% if miles %}
+        <p>{{ miles }}</p>
+    {% endif %}
+</form>
+
+
+</body>
+</html>
