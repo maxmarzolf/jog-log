@@ -18,7 +18,7 @@ def miles_ran():
 
 def insert_into_table(miles):
     current_date = datetime.now()
-    connection = sqlite3.connect('data')
+    connection = sqlite3.connect('C:\\Users\\bmbur\\dev\\jog-log\\data')
     cursor = connection.cursor()
     cursor.execute('insert into run values (current_date, \"%s\")' % miles)
     connection.commit()
