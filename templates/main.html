@@ -2,21 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Jog-Log</title>
 </head>
 <body>
+
 <form method="POST">
-    <div class="stuff">
+    <div class="everything">
         <input type="text" name="mile_input">
         <button type="submit">Save Miles</button>
-        <button type="submit">Show Graph</button>
     </div>
-
-    {% if miles %}
-        <p>{{ miles }}</p>
-    {% endif %}
 </form>
 
+<form action="graph.html" method="POST">
+    <button name="graph" type="submit">Graph</button>
+</form>
 
 </body>
 </html>
