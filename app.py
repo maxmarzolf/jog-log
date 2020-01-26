@@ -32,7 +32,6 @@ def show_graph():
     dataframe = pd.read_sql('select * from run', engine)
     x_axis = dataframe['Day'].tolist()
     y_axis = dataframe['Miles_Ran'].tolist()
-    print(x_axis)
     output_file("templates/graph.html")
     p = figure(title="Miles Ran", x_axis_label='day', y_axis_label='miles', height=375, width=1200)
     p.line(x_axis, y_axis, legend_label="Miles per Day", line_width=2)
