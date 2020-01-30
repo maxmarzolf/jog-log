@@ -1,0 +1,368 @@
+@media screen and (min-width: 500px) {
+    /* GENERAL STYLES, PROBABLY OVERDONE && OVERLY SPECIFIC */
+    .block {
+        display: block;
+    }
+
+    .block-center {
+        margin: 0 auto;
+    }
+
+    .btn {
+        width: 125px;
+    }
+
+    .btn-block {
+        width: 100%;
+    }
+
+    .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 100px auto;
+        grid-gap: 0px;
+    }
+
+    .input-block {
+        width: 100%;
+    }
+
+    .mb-5 {
+        margin-bottom: 50px;
+    }
+
+    .mb-3 {
+        margin-bottom: 20px;
+    }
+
+    .mt-5 {
+        margin-top: 50px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .w-90 {
+        width: 90%;
+    }
+
+    .w-75 {
+        width: 75%;
+    }
+
+    .w-50 {
+        width: 50%;
+    }
+
+    .w-25 {
+        width: 25%;
+    }
+
+    /* DEFAULT ELEMENT STYLES */
+
+    * {
+        letter-spacing: 3px;
+    }
+    html,
+    body {
+        background: linear-gradient(#FCFCFC, #F4F4F4);
+        margin: 0px 0px;
+        min-height: 100vh;
+    }
+
+    button {
+        box-sizing: border-box;
+        border: 1px solid;
+        height: 40px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 3px 3px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    form {
+        grid-column: 5 / 9;
+        grid-row: 2;
+    }
+
+    h2 {
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    h3 {
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    h4 {
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    header {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        margin: 0px 0px;
+        background-color: #1a1a1a;
+        color: #f4f4f4;
+        font-family: 'Roboto Slab', serif;
+        border-bottom: 2px solid #BCA300;
+    }
+
+    input {
+        box-sizing: border-box;
+        border: 1px solid;
+        height: 40px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 3px 3px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+
+    /* MOSTLY CUSTOM, NOT GOOD FOR GENERAL CSS */
+
+    @keyframes btn-hover {
+        0% {
+            /*background-color: #1a1a1a;*/
+            box-shadow: 4px 4px 14px rgba(0,0,0,0.65), -1px -1px 6px rgba(0,0,0,0.35);
+            background-color: #1a1a1a;
+            transform: scale(1);
+        }
+        100% {
+            /*background-color: #bca300;*/
+            box-shadow: 5px 5px 16px rgba(0,0,0,0.65), -1px -1px 7px rgba(0,0,0,0.35);
+            background-color: #1d1d1d;
+            transform: scale(1.01);
+        }
+    }
+
+    .btn {
+        background-color: #1a1a1a;
+        border: 0px;
+        color: #f4f4f4;
+    }
+
+    .btn:hover {
+        animation: btn-hover .5s forwards;
+        /*background-color: #bca300;*/
+        /*box-shadow: 5px 5px 16px #3e3e3e, -1px -1px 7px #C3C3C3;*/
+    }
+
+    .input {
+        border: 2px solid #1a1a1a;
+    }
+
+    .shadow {
+        box-shadow: 4px 4px 14px rgba(0,0,0,0.65), -1px -1px 6px rgba(0,0,0,0.35);
+    }
+
+    .header-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header-container a {
+        text-decoration: none;
+    }
+
+    .header-container a:visited {
+        color: #f4f4f4;
+    }
+
+    .header-container a:active {
+        color: #f4f4f4;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    .inner {
+        grid-column: 2 / 12;
+        grid-row: 2;
+    }
+}
+
+/* screen sizes */
+
+@media screen and (min-width: 0px) and (max-width: 499px) {
+    /* GENERAL STYLES, PROBABLY OVERDONE && OVERLY SPECIFIC */
+    .block {
+        display: block;
+    }
+
+    .block-center {
+        margin: 0 auto;
+    }
+
+    .btn {
+        width: 125px;
+    }
+
+    .btn-block {
+        width: 100%;
+    }
+
+    .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 100px auto;
+        grid-gap: 0px;
+    }
+
+    .input-block {
+        width: 100%;
+    }
+
+    .mb-5 {
+        margin-bottom: 50px;
+    }
+
+    .mb-3 {
+        margin-bottom: 20px;
+    }
+
+    .mt-5 {
+        margin-top: 50px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .w-90 {
+        width: 90%;
+    }
+
+    .w-75 {
+        width: 75%;
+    }
+
+    .w-50 {
+        width: 50%;
+    }
+
+    .w-25 {
+        width: 25%;
+    }
+
+    /* DEFAULT ELEMENT STYLES */
+
+    * {
+        letter-spacing: 3px;
+    }
+    html,
+    body {
+        background: linear-gradient(#FCFCFC, #F4F4F4);
+        margin: 0px 0px;
+        min-height: 100vh;
+    }
+
+    button {
+        box-sizing: border-box;
+        border: 1px solid;
+        height: 40px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 3px 3px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    form {
+        grid-column: 2 / 12;
+        grid-row: 2;
+    }
+
+    h2 {
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    h3 {
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    h4 {
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    header {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        margin: 0px 0px;
+        background-color: #1a1a1a;
+        color: #f4f4f4;
+        font-family: 'Roboto Slab', serif;
+        border-bottom: 2px solid #BCA300;
+    }
+
+    input {
+        box-sizing: border-box;
+        border: 1px solid;
+        height: 40px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 3px 3px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+
+    /* MOSTLY CUSTOM, NOT GOOD FOR GENERAL CSS */
+
+    @keyframes btn-hover {
+        0% {
+            /*background-color: #1a1a1a;*/
+            box-shadow: 4px 4px 14px rgba(0,0,0,0.65), -1px -1px 6px rgba(0,0,0,0.35);
+            background-color: #1a1a1a;
+            transform: scale(1);
+        }
+        100% {
+            /*background-color: #bca300;*/
+            box-shadow: 5px 5px 16px rgba(0,0,0,0.65), -1px -1px 7px rgba(0,0,0,0.35);
+            background-color: #1d1d1d;
+            transform: scale(1.01);
+        }
+    }
+
+    .btn {
+        background-color: #1a1a1a;
+        border: 0px;
+        color: #f4f4f4;
+    }
+
+    .btn:hover {
+        animation: btn-hover .5s forwards;
+        /*background-color: #bca300;*/
+        /*box-shadow: 5px 5px 16px #3e3e3e, -1px -1px 7px #C3C3C3;*/
+    }
+
+    .input {
+        border: 2px solid #1a1a1a;
+    }
+
+    .shadow {
+        box-shadow: 4px 4px 14px rgba(0,0,0,0.65), -1px -1px 6px rgba(0,0,0,0.35);
+    }
+
+    .header-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .inner {
+        grid-column: 2 / 12;
+        grid-row: 2;
+    }
+}

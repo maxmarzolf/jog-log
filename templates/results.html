@@ -1,0 +1,16 @@
+{% extends '_layout.html' %}
+
+{% block content %}
+    {% include 'header.html' %}
+
+    <div class="inner">
+        <div class="block block-center mt-5 mb-5">
+            <h4 class="text-center">Miles Recorded:</h4>
+            <h2 class="text-center">{{ miles }}</h2>
+            {% if miles|float > 1 %}
+                <small class="block text-center">Nice.</small>
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock %}
