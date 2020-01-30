@@ -19,7 +19,7 @@ def miles_ran():
 
 
 def insert_into_table(miles):
-    connection = sqlite3.connect('data')
+    connection = sqlite3.connect('C:\\Users\\bmbur\\dev\\jog-log\\data')
     cursor = connection.cursor()
     cursor.execute('insert into run (miles_ran) values (\"%s\")' % miles)
     connection.commit()
@@ -28,11 +28,11 @@ def insert_into_table(miles):
 
 
 def show_graph():
-    engine = create_engine('sqlite:///data')
+    engine = create_engine('sqlite:///C:\\Users\\bmbur\\dev\\jog-log\\data')
     dataframe = pd.read_sql('select * from run', engine)
     x_axis = dataframe['Day'].tolist()
     y_axis = dataframe['Miles_Ran'].tolist()
-    output_file("templates/graph.html")
+    output_file("graph.html")
     p = figure(title="Miles Ran", x_axis_label='day', y_axis_label='miles', height=375, width=1200)
     p.line(x_axis, y_axis, legend_label="Miles per Day", line_width=2)
     show(p)

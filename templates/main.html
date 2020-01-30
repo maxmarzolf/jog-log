@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Jog-Log</title>
-</head>
-<body>
+{% extends "_layout.html" %}
+
+{% block content %}
+    {% include 'header.html' %}
 
 <form method="POST">
-    <div class="everything">
-        <input type="text" name="mile_input">
-        <button type="submit">Save Miles</button>
+    <div class="block block-center mt-5 mb-5">
+        <input class="block input input-block shadow mb-3" type="text" name="mile_input">
+        <button class="block btn btn-block shadow" type="submit">Save Miles</button>
     </div>
 </form>
 
-<form action="graph.html" method="POST">
+<!--<form action="graph.html" method="POST">
     <button name="graph" type="submit">Graph</button>
-</form>
+</form>-->
 
-</body>
-</html>
+{% endblock %}
