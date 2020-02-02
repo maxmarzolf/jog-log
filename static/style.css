@@ -365,4 +365,15 @@
         grid-column: 2 / 12;
         grid-row: 2;
     }
+
+    /*.bk-root > .bk {*/
+    /*    margin: auto !important;*/
+    /*}*/
+
 }
+
+
+.bk-plot-wrapper table {
+    margin: 0 auto;
+}
+
