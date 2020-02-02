@@ -41,6 +41,7 @@ def show_graph():
                toolbar_location='above')
     p.background_fill_color = '#f4f4f4'
     p.line(x_axis, y_axis, legend_label="Miles per Day", line_width=2, line_color="#000000")
+    show(p)
 
 
 if __name__ == '__main__':
