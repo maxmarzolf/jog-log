@@ -3,4 +3,4 @@ Track your miles and graph them by day.
    <img src = "image/image.png">
 </div>
 
-Small enough to fit in app.py, will create factory and blueprints with added functionality.
+Will create factory and blueprints with added functionality.
