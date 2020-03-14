@@ -25,6 +25,10 @@ def insert_into_table(miles):
     cursor = connection.cursor()
     cursor.execute('insert into run (miles_ran) values (\"%s\")' % miles)
     connection.commit()
+    close_connection(cursor, connection)
+
+
+def close_connection(cursor, connection):
     cursor.close()
     connection.close()
 
