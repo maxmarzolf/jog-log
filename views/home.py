@@ -14,18 +14,22 @@ def miles_ran():
     if request.method == 'GET':
         return render_template('home.html')
     elif request.method == 'POST':
-        miles = request.form['mile_input']
-        insert_into_table(miles)
+        create_connection()
         show_graph()
         return render_template('home.html')
 
 
-def insert_into_table(miles):
+def create_connection():
     connection = sqlite3.connect('data')
     cursor = connection.cursor()
+    miles = request.form['mile_input']
+    insert_into_table(miles, cursor, connection)
+    close_connection(cursor, connection)
+
+
+def insert_into_table(miles, cursor, connection):
     cursor.execute('insert into run (miles_ran) values (\"%s\")' % miles)
     connection.commit()
-    close_connection(cursor, connection)
 
 
 def close_connection(cursor, connection):
