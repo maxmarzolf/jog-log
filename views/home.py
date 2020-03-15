@@ -15,7 +15,7 @@ def miles_ran():
         return render_template('home.html')
     elif request.method == 'POST':
         create_connection()
-        show_graph()
+        graph()
         return render_template('home.html')
 
 
