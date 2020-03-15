@@ -37,7 +37,7 @@ def close_connection(cursor, connection):
     connection.close()
 
 
-def show_graph():
+def graph():
     engine = create_engine('sqlite:///data')
     df = pd.read_sql('select * from run', engine)
     x_axis = df['Day'].tolist()
