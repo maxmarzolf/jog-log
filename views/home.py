@@ -47,6 +47,10 @@ def graph():
     output_file("templates/graph.html")
     p = figure(title="Miles Ran", x_axis_label='day', y_axis_label='miles', height=225, width=950,
                toolbar_location='above')
-    p.background_fill_color = '#f4f4f4'
+    set_graph_characteristics(p)
     p.line(x_axis, y_axis, legend_label="Miles per Day", line_width=2, line_color="#000000")
     show(p)
+
+
+def set_graph_characteristics(p):
+    p.background_fill_color = '#f4f4f4'
